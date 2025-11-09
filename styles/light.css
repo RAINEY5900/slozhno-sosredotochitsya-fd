@@ -1,12 +1,48 @@
-/*
-  Специально для светлой темы при наличии класса.
-  Здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
+/* Светлая тема */
 
 :root.theme-light {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+  --accent-color: #ff8dcb;
+  --title-color: #ffc2e6;
+  --text-color: #353430;
+  --background-color: #fff1f7;
+  --section-title-color: #353430;
+  --card-title-color: #353430;
+  --button-color: #353430;
+  --button-border: rgba(50, 49, 45, 0.4);
+  --decor-color: #353430;
+  --background-image: url(../images/cover-image-light.png);
+}
+
+.theme-light .header__rec,
+.theme-light .header__rec::after {
+  display: none;
+}
+
+.theme-light .footer__title {
+  text-shadow: 2px 2px 0 #ff8dcb;
+}
+
+/* Авто-тема для светлого режима системы */
+@media (prefers-color-scheme: light) {
+  :root {
+    --accent-color: #ff8dcb;
+    --title-color: #ffc2e6;
+    --text-color: #353430;
+    --background-color: #fff1f7;
+    --section-title-color: #353430;
+    --card-title-color: #353430;
+    --button-color: #353430;
+    --button-border: rgba(50, 49, 45, 0.4);
+    --decor-color: #353430;
+    --background-image: url(../images/cover-image-light.png);
+  }
+  
+  .header__rec,
+  .header__rec::after {
+    display: none;
+  }
+  
+  .footer__title {
+    text-shadow: 2px 2px 0 #ff8dcb;
+  }
 }
