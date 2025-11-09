@@ -1,6 +1,3 @@
-/* Основные стили для Mobile First */
-
-/* Header */
 .header {
   position: relative;
   display: grid;
@@ -91,7 +88,6 @@
   padding: 0;
 }
 
-/* Main content */
 .main {
   display: flex;
   flex-direction: column;
@@ -118,7 +114,6 @@
   gap: var(--tablet-gap);
 }
 
-/* Cards */
 .card {
   display: flex;
   flex-direction: column;
@@ -143,7 +138,6 @@
   color: var(--text-color);
 }
 
-/* Ссылки */
 .link {
   text-shadow: 2px 2px 0 var(--accent-color);
 }
@@ -160,7 +154,6 @@
   outline: 1px solid currentColor;
 }
 
-/* Галерея - Mobile */
 .gallery-section {
   gap: var(--mobile-gap);
 }
@@ -178,7 +171,6 @@
   object-position: center;
 }
 
-/* Footer */
 .footer {
   position: relative;
   display: grid;
@@ -196,7 +188,6 @@
   text-shadow: var(--footer-title-shadow);
 }
 
-/* Tablet */
 @media (width >= 768px) {
   .header {
     padding: 20px;
@@ -229,7 +220,6 @@
     gap: var(--tablet-gap);
   }
   
-  /* Первая секция - две колонки */
   .section:nth-child(1) {
     display: grid;
     grid-template-columns: var(--tablet-section-title-width) 1fr;
@@ -247,7 +237,6 @@
     gap: var(--tablet-gap);
   }
   
-  /* Вторая секция - три колонки в строку */
   .section:nth-child(2) {
     display: flex;
     flex-direction: column;
@@ -264,7 +253,6 @@
     gap: var(--tablet-gap);
   }
   
-  /* Третья секция (бывшая 4-я) - заголовок слева, контент справа в одну колонку */
   .section:nth-child(3) {
     display: grid;
     grid-template-columns: var(--tablet-section-title-width) 1fr;
@@ -281,7 +269,6 @@
     flex-direction: column;
   }
   
-  /* Четвертая секция (бывшая 5-я) - галерея */
   .section:nth-child(4) {
     display: flex;
     flex-direction: column;
@@ -338,7 +325,6 @@
   }
 }
 
-/* Desktop */
 @media (width >= 1024px) {
   .header {
     padding: 20px;
@@ -373,7 +359,6 @@
     gap: 80px;
   }
   
-  /* Первая секция - две колонки */
   .section:nth-child(1) {
     display: grid;
     grid-template-columns: var(--desktop-section-title-width) 1fr;
@@ -391,7 +376,6 @@
     gap: var(--desktop-gap);
   }
   
-  /* Вторая секция - три колонки в строку */
   .section:nth-child(2) {
     display: flex;
     flex-direction: column;
@@ -408,7 +392,6 @@
     gap: var(--desktop-gap);
   }
   
-  /* Третья секция (бывшая 4-я) - заголовок слева, контент справа в одну колонку */
   .section:nth-child(3) {
     display: grid;
     grid-template-columns: var(--desktop-section-title-width) 1fr;
@@ -426,7 +409,6 @@
     gap: var(--desktop-gap);
   }
   
-  /* Четвертая секция (бывшая 5-я) - галерея */
   .section:nth-child(4) {
     display: flex;
     flex-direction: column;
@@ -484,7 +466,6 @@
   }
 }
 
-/* Mobile specific gallery heights */
 @media (width < 768px) {
   .gallery__image:nth-child(1) {
     block-size: 142px;

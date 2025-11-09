@@ -1,5 +1,4 @@
 :root {
-  /* Цвета */
   --accent-color: #ff0070;
   --title-color: #db00ff;
   --text-color: #f1b2ce;
@@ -10,41 +9,33 @@
   --button-border: #ff0070;
   --decor-color: #ff0070;
   
-  /* Тени */
   --title-shadow: 4px 4px 0 var(--accent-color);
   --footer-title-shadow: 2px 2px 0 var(--accent-color);
-  
-  /* Шрифты */
+
   --font-family: 'IBM Plex mono', monospace;
   --font-size: 18px;
   --line-height: 23.4px;
   --font-weight-regular: 400;
   --font-weight-bold: 700;
   
-  /* Отступы */
   --gap: 20px;
   --section-gap: 50px;
   --card-gap: 10px;
   
-  /* Размеры */
   --header-height: 100vb;
   --footer-height: 100vb;
   --min-block-size: 668px;
   
-  /* Фоны */
   --background-image: url(../images/cover-image-dark.png);
   
-  /* Мобильные размеры */
   --mobile-content-width: 355px;
   --mobile-padding: 10px;
   --mobile-gap: 10px;
   
-  /* Планшетные размеры */
   --tablet-section-title-width: 236px;
   --tablet-content-width: 472px;
   --tablet-gap: 20px;
   
-  /* Десктопные размеры */
   --desktop-section-title-width: 315px;
   --desktop-content-width: 649px;
   --desktop-gap: 20px;

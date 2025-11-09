@@ -1,5 +1,3 @@
-/* Глобальные стили для проекта, их можно дополнять и менять по желанию */
-
 *,
 *::before,
 *::after {
@@ -63,7 +61,6 @@ a {
   background-color: var(--background-color);
 }
 
-/* Декоративные уголки */
 .decorated-zone::before,
 .decorated-zone::after {
   content: '';
@@ -86,7 +83,6 @@ a {
   inset-block-end: 10px;
 }
 
-/* Скрытие элемента от скринридеров */
 .visually-hidden {
   position: absolute;
   inline-size: 1px;

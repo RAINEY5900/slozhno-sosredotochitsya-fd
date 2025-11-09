@@ -1,5 +1,3 @@
-/* Светлая тема */
-
 :root.theme-light {
   --accent-color: #ff8dcb;
   --title-color: #ffc2e6;
@@ -22,7 +20,6 @@
   text-shadow: 2px 2px 0 #ff8dcb;
 }
 
-/* Авто-тема для светлого режима системы */
 @media (prefers-color-scheme: light) {
   :root {
     --accent-color: #ff8dcb;
