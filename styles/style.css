@@ -92,7 +92,7 @@
 @media (width: 1024px) and (height: 768px) {
   .header__content {
     align-self: start !important;
-    margin-bottom: 130px !important;
+    margin-bottom: 125px !important;
   }
 }
 
@@ -215,7 +215,7 @@
   /* Поднимаем текстовый блок выше на 1024x768 */
 @media (width: 1024px) and (height: 768px) {
   .header__title {
-    margin-top: 170px !important;
+    margin-top: 165px !important;
   }
 }
   .header__content {
