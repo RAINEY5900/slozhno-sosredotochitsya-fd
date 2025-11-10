@@ -92,7 +92,7 @@
 @media (width: 1024px) and (height: 768px) {
   .header__content {
     align-self: start !important;
-    margin-bottom: 100px !important;
+    margin-bottom: 120px !important;
   }
 }
 
@@ -212,7 +212,12 @@
     margin-inline-start: -20px;
     justify-self: start;
   }
-  
+  /* Поднимаем текстовый блок выше на 1024x768 */
+@media (width: 1024px) and (height: 768px) {
+  .header__title {
+    margin-top: 170px !important;
+  }
+}
   .header__content {
     max-inline-size: 364px;
     justify-self: end;
