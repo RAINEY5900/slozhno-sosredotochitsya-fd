@@ -11,8 +11,7 @@
   --background-image: url(../images/cover-image-dark.png);
 }
 
-.theme-dark .header__rec,
-.theme-dark .header__rec::after {
+.theme-dark .header__rec {
   display: block;
 }
 
@@ -40,8 +39,27 @@
     --decor-color: #ff0070;
     --background-image: url(../images/cover-image-dark.png);
   }
-   
+  
+  .header__rec {
+    display: block;
+  }
+  
   .header__rec::after {
+    content: '';
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background-color: var(--accent-color);
+    margin-left: 10px;
+    box-shadow: 0 0 4px 2px var(--accent-color);
+  }
+  
+  .theme-auto .header__rec {
+    display: block;
+  }
+  
+  .theme-auto .header__rec::after {
     content: '';
     display: inline-block;
     width: 9px;

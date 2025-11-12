@@ -33,7 +33,7 @@
     --decor-color: #353430;
     --background-image: url(../images/cover-image-light.png);
   }
-  
+
   .header__rec,
   .header__rec::after {
     display: none;
