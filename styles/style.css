@@ -1,7 +1,7 @@
 /* Базовые стили для 1024x768 */
 .page {
-  background-color: #FFF1F7;
-  color: #353430;
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
 
 .header {
@@ -32,12 +32,12 @@
   text-transform: lowercase;
   cursor: pointer;
   block-size: 26px;
-  color: #353430;
+  color: var(--button-color);
   background: transparent;
 }
 
 .header__theme-menu-button:hover {
-  border: 1px solid rgba(53, 52, 48, 0.4);
+  border: 1px solid var(--button-border);
 }
 
 .header__theme-menu-button:focus {
@@ -45,11 +45,11 @@
 }
 
 .header__theme-menu-button:focus-visible {
-  border-block-end: 1px solid #353430;
+  border-block-end: 1px solid var(--button-color);
 }
 
 .header__theme-menu-button_active {
-  border: 1px solid #353430;
+  border: 1px solid var(--button-color);
   pointer-events: none;
 }
 
@@ -57,7 +57,7 @@
   position: absolute;
   inset-inline-end: 48px;
   inset-block-start: 20px;
-  color: transparent;
+  color: var(--accent-color);
   font-size: 18px;
   line-height: 1.39;
 }
@@ -69,11 +69,11 @@
 .header__title {
   align-self: center;
   justify-self: start;
-  color: #FFC2E6;
+  color: var(--title-color);
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   font-weight: 700;
   line-height: 0.825;
-  text-shadow: 4px 4px 0px #FF8DCB;
+  text-shadow: 4px 4px 0px var(--accent-color);
   margin-inline-start: -20px;
   margin-bottom: 0px;
   margin-top: 0px;
@@ -88,8 +88,8 @@
 
 .header__text {
   font-weight: 700;
-  background-color: #FF8DCB;
-  color: #353430;
+  background-color: var(--accent-color);
+  color: var(--card-title-color);
   padding: 0;
 }
 
@@ -108,7 +108,7 @@
 }
 
 .section__title {
-  color: #353430;
+  color: var(--section-title-color);
   font-size: 18px;
   font-weight: 700;
   line-height: 23px;
@@ -169,14 +169,12 @@
 }
 
 .section:nth-child(3) .section__subtitle {
-  margin: 0 0 8px 0;
-  height: 23px;
   opacity: 1;
 }
 
 .section__subtitle {
-  background-color: #FF8DCB;
-  color: #353430;
+  background-color: var(--accent-color);
+  color: var(--card-title-color);
   font-size: 18px;
   font-weight: 700;
   line-height: 23px;
@@ -200,8 +198,8 @@
   font-size: 18px;
   font-weight: 700;
   line-height: 23px;
-  background-color: #FF8DCB;
-  color: #353430;
+  background-color: var(--accent-color);
+  color: var(--card-title-color);
 }
 
 /* Для третьей секции заголовки карточек обычные */
@@ -216,18 +214,18 @@
 }
 
 .card__content p {
-  color: #353430;
+  color: var(--text-color);
   font-size: 18px;
   line-height: 23px;
 }
 
 .link {
-  text-shadow: 2px 2px 0 #FF8DCB;
-  color: #353430;
+  text-shadow: 2px 2px 0 var(--accent-color);
+  color: var(--text-color);
 }
 
 .link:hover {
-  border-block-end: 1px solid #353430;
+  border-block-end: 1px solid var(--text-color);
 }
 
 .link:focus {
@@ -235,7 +233,7 @@
 }
 
 .link:focus-visible {
-  outline: 1px solid #353430;
+  outline: 1px solid var(--text-color);
 }
 
 /* Галерея */
@@ -244,8 +242,8 @@
 }
 
 .gallery__title {
-  background-color: #FF8DCB;
-  color: #353430;
+  background-color: var(--accent-color);
+  color: var(--card-title-color);
   font-size: 18px;
   font-weight: 700;
   line-height: 23px;
@@ -301,11 +299,11 @@
 }
 
 .footer__title {
-  color: #FFC2E6;
+  color: var(--title-color);
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   font-weight: 700;
   line-height: 0.825;
-  text-shadow: 2px 2px 0px #FF0070;
+  text-shadow: 2px 2px 0px var(--accent-color);
 }
 
 /* Декоративные уголки */
@@ -316,8 +314,8 @@
   inset-block-start: 20px;
   inline-size: 25px;
   block-size: 25px;
-  border-inline-end: 1px solid #353430;
-  border-block-start: 1px solid #353430;
+  border-inline-end: 1px solid var(--decor-color);
+  border-block-start: 1px solid var(--decor-color);
 }
 
 .decorated-zone::after {
@@ -327,8 +325,8 @@
   inset-block-end: 20px;
   inline-size: 25px;
   block-size: 25px;
-  border-inline-start: 1px solid #353430;
-  border-block-end: 1px solid #353430;
+  border-inline-start: 1px solid var(--decor-color);
+  border-block-end: 1px solid var(--decor-color);
 }
 
 /* Скрываем REC в светлой теме */
@@ -498,6 +496,6 @@
 
 @media (width >= 1024px) and (width < 1280px) {
   .header__content {
-    padding-top: 100px;
+    padding-top: 110px;
   }
 }
