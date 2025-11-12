@@ -75,13 +75,15 @@
   line-height: 0.825;
   text-shadow: 4px 4px 0px #FF8DCB;
   margin-inline-start: -20px;
+  margin-bottom: 100px;
 }
 
 .header__content {
   align-self: start;
   justify-self: end;
-  max-inline-size: 364px;
-  margin-block-end: 0;
+  max-inline-size: 491px;
+
+
 }
 
 .header__text {
@@ -344,13 +346,6 @@
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
     margin-inline-start: 0;
     justify-self: center;
-  }
-  
-  .header__content {
-    max-inline-size: 355px;
-    justify-self: end;
-    align-self: center;
-    margin-block-end: 0;
   }
   
   .main {
