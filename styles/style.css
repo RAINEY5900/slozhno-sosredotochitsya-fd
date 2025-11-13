@@ -435,12 +435,6 @@
   }
 }
 
-@media (min-width: 480px) and (width < 768px) {
-  .section:nth-child(2) .section__content {
-    grid-template-columns: repeat(2, 1fr); 
-  }
-}
-
 @media (width >= 1024px) {
   .header__theme-menu {
     justify-self: center;
