@@ -376,12 +376,6 @@
     grid-template-columns: 1fr;
   }
   
-  @media (min-width: 480px) and (width < 768px) {
-    .section:nth-child(2) .section__content {
-      grid-template-columns: repeat(2, 1fr); 
-    }
-  }
-  
   .section:nth-child(2) .section__title {
     max-inline-size: none;
   }
@@ -438,6 +432,12 @@
   .decorated-zone::after {
     inset-inline-start: 10px;
     inset-block-end: 10px;
+  }
+}
+
+@media (min-width: 480px) and (width < 768px) {
+  .section:nth-child(2) .section__content {
+    grid-template-columns: repeat(2, 1fr); 
   }
 }
 
