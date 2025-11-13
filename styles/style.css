@@ -324,11 +324,7 @@
   display: none;
 }
 
-.section:nth-child(2) .section__content {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-}
+/* УДАЛЕН ДУБЛИРУЮЩИЙСЯ СЕЛЕКТОР - БЫЛ НА СТРОКЕ 327 */
 
 @media (width >= 768px) and (width < 1024px) {
   .section:nth-child(2) .section__content {
@@ -342,7 +338,7 @@
     top: 724px;
     left: 384px;
   }
- }
+}
 
 @media (width < 768px) {
   .header {
