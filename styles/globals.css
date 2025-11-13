@@ -1,66 +1,66 @@
-*, 
-*::before, 
-*::after { 
-  box-sizing: border-box; 
-} 
- 
-html { 
-  block-size: 100%; 
-} 
- 
-body { 
-  min-inline-size: 375px; 
-  max-inline-size: 1440px; 
-  margin: 0 auto; 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  block-size: 100%;
+}
+
+body {
+  min-inline-size: 375px;
+  max-inline-size: 1440px;
+  margin: 0 auto;
   font-family: var(--font-family), "IBM Plex mono", monospace;
-  font-size: var(--font-size); 
-  line-height: var(--line-height); 
-  background-color: var(--background-color); 
-  color: var(--text-color); 
-} 
- 
-h1, 
-h2, 
-h3, 
-h4, 
-h5, 
-h6, 
-p { 
-  margin: 0; 
-} 
- 
-ul { 
-  margin: 0; 
-  padding: 0; 
-  list-style: none; 
-} 
- 
-picture { 
-  margin: 0; 
-  padding: 0; 
-} 
- 
-button, 
-a { 
-  color: currentColor; 
-  font-family: inherit; 
-  font-size: inherit; 
-  line-height: inherit; 
-  background: transparent; 
-  border: none; 
-  text-decoration: none; 
-  cursor: pointer; 
-} 
- 
-.visually-hidden { 
-  position: absolute; 
-  inline-size: 1px; 
-  block-size: 1px; 
-  margin: -1px; 
-  border: 0; 
-  padding: 0; 
-  white-space: nowrap; 
-  clip-path: inset(100%); 
-  clip: rect(0 0 0 0); 
-  overflow: hidden; 
+  font-size: var(--font-size);
+  line-height: var(--line-height);
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+picture {
+  margin: 0;
+  padding: 0;
+}
+
+button,
+a {
+  color: currentColor;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  background: transparent;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.visually-hidden {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
