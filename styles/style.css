@@ -139,6 +139,12 @@
   max-inline-size: 236px;
 }
 
+.section:nth-child(2) .section__content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
 .section:nth-child(3) {
   display: grid;
   grid-template-columns: 236px 1fr;
@@ -318,6 +324,12 @@
   display: none;
 }
 
+.section:nth-child(2) .section__content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
 @media (width >= 768px) and (width < 1024px) {
   .section:nth-child(2) .section__content {
     grid-template-columns: 1fr;
@@ -330,7 +342,7 @@
     top: 724px;
     left: 384px;
   }
-}
+ }
 
 @media (width < 768px) {
   .header {
