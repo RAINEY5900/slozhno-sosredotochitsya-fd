@@ -97,7 +97,7 @@
   align-self: start;
   justify-self: end;
   max-inline-size: 491px;
-  padding-top: 60px;
+  padding-top: 65px;
 }
 
 .header__text {
@@ -331,7 +331,7 @@
 
   .header__content {
     max-inline-size: 364px;
-    padding-top: 115px;
+    padding-top: 150px;
   }
 }
 
@@ -461,6 +461,6 @@
 
 @media (width >= 1024px) and (width < 1280px) {
   .header__content {
-    padding-top: 120px;
+    padding-top: 125px;
   }
 }
