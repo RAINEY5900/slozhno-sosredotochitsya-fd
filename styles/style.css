@@ -331,7 +331,7 @@
 
   .header__content {
     max-inline-size: 364px;
-    padding-top: 155px;
+    padding-top: 158px;
   }
 }
 
@@ -461,7 +461,7 @@
 
 @media (width >= 1024px) and (width < 1280px) {
   .header__content {
-    padding-top: 117px;
+    padding-top: 118px;
   }
 }
 
