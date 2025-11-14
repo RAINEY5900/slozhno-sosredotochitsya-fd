@@ -1,72 +1,45 @@
-:root.theme-dark {
-  --accent-color: #ff0070;
-  --title-color: #db00ff;
-  --text-color: #f1b2ce;
-  --background-color: #000028;
-  --section-title-color: #ff0070;
-  --card-title-color: #000028;
-  --button-color: #ff0070;
-  --button-border: #ff0070;
-  --decor-color: #ff0070;
-  --background-image: url(../images/cover-image-dark.png);
+:root.theme-dark { 
+  --accent-color: #ff0070; 
+  --title-color: #db00ff; 
+  --text-color: #f1b2ce; 
+  --background-color: #000028; 
+  --section-title-color: #ff0070; 
+  --card-title-color: #000028; 
+  --button-color: #ff0070; 
+  --button-border: rgba(255, 0, 112, 0.4);
+  --decor-color: #ff0070; 
+  --background-image: url(../images/cover-image-dark.png); 
+} 
+ 
+.theme-dark .header__rec { 
+  display: flex; 
+} 
+ 
+.theme-dark .header__theme-menu-button:hover {
+  border: 1px solid rgba(255, 0, 112, 0.4);
 }
 
-.theme-dark .header__rec {
-  display: block;
-}
+@media (prefers-color-scheme: dark) { 
+  :root { 
+    --accent-color: #ff0070; 
+    --title-color: #db00ff; 
+    --text-color: #f1b2ce; 
+    --background-color: #000028; 
+    --section-title-color: #ff0070; 
+    --card-title-color: #000028; 
+    --button-color: #ff0070; 
+    --button-border: rgba(255, 0, 112, 0.4);
+    --decor-color: #ff0070; 
+    --background-image: url(../images/cover-image-dark.png); 
+  } 
+   
+  .header__rec,
+  .theme-auto .header__rec { 
+    display: flex; 
+  }
 
-.theme-dark .header__rec::after {
-  content: '';
-  display: inline-block;
-  width: 9px;
-  height: 9px;
-  border-radius: 50%;
-  background-color: var(--accent-color);
-  margin-left: 10px;
-  box-shadow: 0 0 4px 2px var(--accent-color);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --accent-color: #ff0070;
-    --title-color: #db00ff;
-    --text-color: #f1b2ce;
-    --background-color: #000028;
-    --section-title-color: #ff0070;
-    --card-title-color: #000028;
-    --button-color: #ff0070;
-    --button-border: #ff0070;
-    --decor-color: #ff0070;
-    --background-image: url(../images/cover-image-dark.png);
-  }
-  
-  .header__rec {
-    display: block;
-  }
-  
-  .header__rec::after {
-    content: '';
-    display: inline-block;
-    width: 9px;
-    height: 9px;
-    border-radius: 50%;
-    background-color: var(--accent-color);
-    margin-left: 10px;
-    box-shadow: 0 0 4px 2px var(--accent-color);
-  }
-  
-  .theme-auto .header__rec {
-    display: block;
-  }
-  
-  .theme-auto .header__rec::after {
-    content: '';
-    display: inline-block;
-    width: 9px;
-    height: 9px;
-    border-radius: 50%;
-    background-color: var(--accent-color);
-    margin-left: 10px;
-    box-shadow: 0 0 4px 2px var(--accent-color);
+  .header__theme-menu-button:hover,
+  .theme-auto .header__theme-menu-button:hover {
+    border: 1px solid rgba(255, 0, 112, 0.4);
   }
 }
