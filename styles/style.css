@@ -331,7 +331,7 @@
 
   .header__content {
     max-inline-size: 364px;
-    padding-top: 147px;
+    padding-top: 150px;
   }
 }
 
@@ -462,5 +462,11 @@
 @media (width >= 1024px) and (width < 1280px) {
   .header__content {
     padding-top: 120px;
+  }
+}
+
+@media (width: 375px) and (height: 668px) {
+  .gallery-section {
+    gap: 15px;
   }
 }
