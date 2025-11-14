@@ -97,7 +97,7 @@
   align-self: start;
   justify-self: end;
   max-inline-size: 491px;
-  padding-top: 60px;
+  padding-top: 57px;
 }
 
 .header__text {
@@ -331,7 +331,7 @@
 
   .header__content {
     max-inline-size: 364px;
-    padding-top: 145px;
+    padding-top: 147px;
   }
 }
 
