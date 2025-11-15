@@ -89,8 +89,6 @@
   line-height: 0.825;
   text-shadow: 4px 4px 0px var(--accent-color);
   margin-inline-start: -20px;
-  margin-bottom: 0px;
-  margin-top: 0px;
 }
 
 .header__content {
@@ -104,7 +102,6 @@
   font-weight: 700;
   background-color: var(--accent-color);
   color: var(--card-title-color);
-  padding: 0;
 }
 
 .main {
@@ -117,7 +114,7 @@
 .section {
   display: flex;
   flex-direction: column;
-  gap: 0px;
+  gap: 20px;
 }
 
 .section__title {
@@ -127,48 +124,57 @@
   line-height: 23px;
 }
 
-/* Секции с двумя колонками */
-.section_two-columns {
+/* Секция "Почему сосредоточиться так сложно" */
+.section-concentration {
   display: grid;
   grid-template-columns: 236px 1fr;
   gap: 20px;
 }
 
-.section_two-columns .section__title {
+.section-concentration .section__title {
   grid-column: 1;
 }
 
-.section_two-columns .section__content {
+.section-concentration .section__content {
   grid-column: 2;
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-/* Секции с тремя колонками */
-.section_three-columns {
+/* Секция "Что снижает концентрацию внимания?" */
+.section-factors {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-.section_three-columns .section__title {
+.section-factors .section__title {
   max-inline-size: 236px;
 }
 
-.section_three-columns .section__content {
+.section-factors .section__content {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
 
-/* Секции с подзаголовком */
-.section_with-subtitle .section__subtitle {
-  opacity: 1;
+/* Секция "Как концентрироваться лучше" */
+.section-advice {
+  display: grid;
+  grid-template-columns: 236px 1fr;
+  gap: 20px;
 }
 
-.section_with-subtitle .card__title {
-  font-weight: 400;
+.section-advice .section__title {
+  grid-column: 1;
+}
+
+.section-advice .section__content {
+  grid-column: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .section__subtitle {
@@ -177,14 +183,6 @@
   font-size: 18px;
   font-weight: 700;
   line-height: 23px;
-}
-
-.section__subtitle.title-decor {
-  height: auto;
-  line-height: 23px;
-  padding: 0;
-  display: block;
-  margin: 0;
 }
 
 .card {
@@ -201,13 +199,7 @@
   color: var(--card-title-color);
 }
 
-.card__content {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.card__content p {
+.card__text {
   color: var(--text-color);
   font-size: 18px;
   line-height: 23px;
@@ -216,6 +208,7 @@
 .link {
   text-shadow: 2px 2px 0 var(--accent-color);
   color: var(--text-color);
+  text-decoration: none;
 }
 
 .link:hover {
@@ -324,14 +317,15 @@
   display: none;
 }
 
+/* Адаптивность */
 @media (width >= 768px) and (width < 1024px) {
-  .section_three-columns .section__content {
+  .section-factors .section__content {
     grid-template-columns: 1fr;
   }
 
   .header__content {
     max-inline-size: 364px;
-    padding-top: 158px;
+    padding-top: 159px;
   }
 }
 
@@ -357,23 +351,18 @@
     gap: 50px;
   }
   
-  .section_two-columns,
-  .section_three-columns,
-  .section_with-subtitle {
+  .section-concentration,
+  .section-factors,
+  .section-advice {
     display: flex;
     flex-direction: column;
   }
   
-  .section_two-columns .section__content,
-  .section_with-subtitle .section__content {
-    grid-column: 1;
-  }
-  
-  .section_three-columns .section__content {
+  .section-factors .section__content {
     grid-template-columns: 1fr;
   }
   
-  .section_three-columns .section__title {
+  .section-factors .section__title {
     max-inline-size: none;
   }
   
@@ -442,15 +431,15 @@
     flex-direction: row;
   }
   
-  .section_two-columns {
+  .section-concentration {
     grid-template-columns: 315px 1fr;
   }
   
-  .section_three-columns .section__title {
+  .section-factors .section__title {
     max-inline-size: 315px;
   }
   
-  .section_with-subtitle {
+  .section-advice {
     grid-template-columns: 315px 1fr;
   }
   
@@ -462,11 +451,5 @@
 @media (width >= 1024px) and (width < 1280px) {
   .header__content {
     padding-top: 118px;
-  }
-}
-
-@media (width: 375px) and (height: 668px) {
-  .gallery-section {
-    gap: 15px;
   }
 }
